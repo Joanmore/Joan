@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="Css/Reserva.css">
+</head>
+<body>
+    <div class="center-container">
+        <div class="container">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="fecha-inicio">
+                        <img src="/Img/calendar-days.png" alt="Imagen Fecha Inicio" class="input-img">
+                        Fecha de Inicio:
+                    </label>
+                    <input type="datetime-local" id="fecha-inicio" name="fecha-inicio" class="input_texto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha-fin">
+                        <img src="/Img/calendar-days.png" alt="Imagen Fecha Fin" class="input-img">
+                        Fecha de Fin:
+                    </label>
+                    <input type="datetime-local" id="fecha-fin" name="fecha-fin" class="input_texto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="valor-total">
+                        <img src="/Img/hand-holding-dollar.png" alt="Imagen Valor" class="input-img">
+                        Valor Total:
+                    </label>
+                    <input type="text" id="valor-total" name="valor-total" class="input_texto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="payment-method">
+                        Métodos de Pago:
+                    </label>
+                    <div id="payment-method" class="payment-methods">
+                        <a href="#"><img src="/Img/cc-visa.png" alt="Visa"></a>
+                        <img src="/Img/cc-mastercard.png" alt="Mastercard">
+                        <img src="/Img/cc-paypal.png" alt="PayPal">
+                        <img src="/Img/credit-card.png" alt="Tarjeta de Crédito">
+                    </div>
+                </div>
+
+                <input type="submit" value="Reservar" class="submit-button">
+            </form>    
+        </div>
+
+        <div class="image-container">
+            <img src="/Img/Viajar-dentro-y-fuera-de-Espana-Maldivas.jpg" alt="Imagen Ejemplo" class="example-image">
+        </div>
+    </div>
+</body>
+</html>

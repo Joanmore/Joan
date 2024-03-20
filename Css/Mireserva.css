@@ -1,0 +1,143 @@
+/* Estilos actualizados */
+
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.sidebar {
+    position: fixed;
+    left: -220px;
+    top: 0;
+    bottom: 0;
+    width: 220px;
+    background-color: #333;
+    color: #fff;
+    padding-top: 50px;
+    z-index: 2;
+    transition: left 0.5s;
+    overflow-y: auto; /* Add scrollbar if needed */
+}
+
+.perfil-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.perfilUser {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul ul {
+    display: none;
+}
+
+.sidebar nav ul li {
+    position: relative;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar nav ul li p {
+    text-align: center; /* Centra el nombre de usuario */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+
+.sidebar nav ul li:hover > ul {
+    display: block;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    z-index: 1;
+    transition: margin-left 0.5s;
+}
+
+.content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reservars {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusted image width */
+    grid-gap: 20px;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.reserv img {
+    width: 100%; /* Ancho máximo del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    max-height: 150px; /* Altura máxima para evitar que las imágenes sean demasiado altas */
+    object-fit: cover; /* Escalar y recortar la imagen para que se ajuste al contenedor */
+    border-radius: 10px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #839192;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.reserv p {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.reserv-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilos adicionales para el botón de menú en dispositivos móviles */
+@media only screen and (max-width: 1024px) {
+    .menu-toggle {
+        display: block;
+    }
+}

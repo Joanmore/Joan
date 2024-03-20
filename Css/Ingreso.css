@@ -1,0 +1,82 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Esto centra verticalmente el contenedor */
+}
+
+.a2 a {
+    color: orange; /* Cambia el color del texto a negro */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-family: Arial, sans-serif; /* Cambia la fuente del texto */
+    font-size: 14px; /* Cambia el tamaño del texto */
+    font-weight: bold; /* Hace que el texto sea negrita */
+}
+
+.a2 a:hover {
+    color: #333; /* Cambia el color del texto al pasar el ratón sobre el enlace */
+}
+
+.container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; /* Ancho fijo para el contenedor */
+    background-color: black;
+}
+
+.side-container {
+    flex-basis: 20%; /* Establece el ancho inicial de los contenedores laterales */
+    text-align: center;
+    position: relative; /* Necesario para posicionar los elementos hijos */
+}
+
+.logo {
+    margin-bottom: 10px;
+    width: 60px;
+    margin-left: 80px; /* Ajusta el margen izquierdo para mover la imagen hacia la izquierda */
+    margin-right: auto;
+}
+
+.input-email,
+.input-password {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px; /* Añadimos un margen inferior para separar los campos */
+    width: 100%; /* Establece un ancho del 100% para los contenedores de input */
+    
+}
+
+.input_texto {
+    width: calc(100% - 40px); /* Se resta 40px para dejar espacio para la imagen */
+    padding: 10px;
+    margin: 0 auto; /* Centramos horizontalmente los inputs */
+    margin-bottom: 10px; /* Añadimos un margen inferior para separar los inputs */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.input-img {
+    position: relative; /* Cambiamos a posición relativa */
+    float: left; /* Hacemos que la imagen flote a la izquierda */
+    margin-right: 10px; /* Añadimos un margen a la derecha para separar la imagen del input */
+    width: 20px; /* Reducimos el ancho de la imagen */
+    height: 20px; /* Reducimos el alto de la imagen */
+}
+
+
+input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 0 auto; /* Centramos horizontalmente el botón */
+    border: none;
+    border-radius: 20px;
+    background-color: orange;
+    
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

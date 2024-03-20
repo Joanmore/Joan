@@ -1,0 +1,89 @@
+/* Estilos para el contenedor principal */
+.container {
+    width: 600px;
+    margin: 20px auto;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Estilos para los encabezados */
+.container h4 {
+    margin-top: 0;
+}
+
+/* Estilos para los párrafos */
+.container p {
+    margin-bottom: 10px;
+}
+
+/* Estilos para las líneas horizontales */
+.container hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+/* Estilos para las listas */
+.container li {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+/* Margen superior solo para el segundo párrafo */
+.container p:nth-of-type(2) {
+    margin-top: 10px;
+}
+
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el contenedor de reseñas */
+.review {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los encabezados de reseñas */
+.review h2 {
+    margin-top: 0;
+}
+
+/* Estilos para los elementos de pros y contras */
+.pros-cons {
+    margin-bottom: 20px;
+}
+
+/* Estilos para los comentarios */
+.comments {
+    margin-top: 20px;
+}
+
+/* Estilos para los comentarios individuales */
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los encabezados de comentarios */
+.comment h3 {
+    margin-top: 0;
+}
+
+/* Estilos para los párrafos de comentarios */
+.comment p {
+    margin-bottom: 0;
+}
+

@@ -1,0 +1,97 @@
+body {
+    background-color: black; /* Cambia el color de fondo a negro */
+}
+
+.a a {
+    color: black; /* Cambia el color del texto a negro */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-family: Arial, sans-serif; /* Cambia la fuente del texto */
+    font-size: 14px; /* Cambia el tamaño del texto */
+    font-weight: bold; /* Hace que el texto sea negrita */
+}
+
+.a a:hover {
+    color: #333; /* Cambia el color del texto al pasar el ratón sobre el enlace */
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Esto centra verticalmente el contenedor */
+}
+
+.container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 1240px;
+    height: 1100px;
+    background-color: transparent;
+    background-image: url(/Img/logo\ proyectoff\ 2.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Agregamos posición relativa al contenedor */
+}
+
+
+.side-container {
+    flex-basis: 20%; /* Establece el ancho inicial de los contenedores laterales */
+    text-align: center;
+    position: relative; /* Necesario para posicionar los elementos hijos */
+}
+
+.logo {
+    margin-bottom: 20px; /* Espacio debajo del logo */
+}
+
+.input-email,
+.input-text,
+.input-ciudad,
+.input-fecha {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px; /* Añadimos un margen inferior para separar los campos */
+    width: 100%; /* Establece un ancho del 100% para los contenedores de input */
+    
+}
+
+
+
+.input_texto {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.input-img {
+    position: relative; /* Cambiamos a posición relativa */
+    float: left; /* Hacemos que la imagen flote a la izquierda */
+    margin-right: 10px; /* Añadimos un margen a la derecha para separar la imagen del input */
+    width: 20px; /* Reducimos el ancho de la imagen */
+    height: 20px; /* Reducimos el alto de la imagen */
+}
+
+
+input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 0 auto; /* Centramos horizontalmente el botón */
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
